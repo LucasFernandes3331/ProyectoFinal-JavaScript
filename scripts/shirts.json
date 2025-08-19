@@ -1,0 +1,27 @@
+[
+    {
+        "id": "beatles",
+        "name": "The Beatles",
+        "valor": 25000
+    },
+    {
+        "id": "oasis",
+        "name": "Oasis",
+        "valor": 24500
+    },
+    {
+        "id": "stones",
+        "name": "The Rolling Stones",
+        "valor": 23000
+    },
+    {
+        "id": "pinkfloyd",
+        "name": "Pink Floyd",
+        "valor": 21000
+    },
+    {
+        "id": "queen",
+        "name": "Queen",
+        "valor": 23500
+    }
+]

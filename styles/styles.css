@@ -1,0 +1,166 @@
+/* Paleta de colores: 
+#18230F
+#27391C */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #18230F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+}
+
+
+.logo-img{
+    width: 80px;
+    filter: drop-shadow(1px 1px 12px #81ff33);
+}
+
+h1{
+    font-family: "Space Grotesk", sans-serif;
+    color: #f5f3f3;
+    font-size: 25px;
+}
+
+body{
+    background-color: #27391C;
+    font-family: "Inter", sans-serif;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beatles-card {
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    margin: 20px;
+    transition: .4s;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.beatles-card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px #81ff33;
+}
+
+.beatles-card img{
+    width: 280px;
+    height: 310px;
+}
+
+button{
+    background-color: #18230F;
+    color: #f5f3f3;
+    padding: .6em;
+    border-radius: 30px;
+    border-style:ridge;
+    margin: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #18230F;
+    align-items: center;
+    width: 100%;
+}
+
+footer div{
+    margin: 10px;
+}
+
+.img-footer{
+    width: 20%;
+    filter: drop-shadow(1px 1px 12px #81ff33);
+    padding: 14px;
+}
+
+.div-footer-img{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+.div-footer-p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #f5f3f3;
+    font-size: 18px;
+}
+
+.div-footer-media{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.div-footer-media img{
+    width: 64px;
+    transition: .3s;
+}
+
+.div-footer-media img:hover{
+    transform: scale(1.06);
+}
+
+.section-carrito {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 50px 0px;
+}
+
+.carrito {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow:6px 5px 8px #18230F;
+}
+
+.carrito-texto {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#comprar-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+#lista-compras{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
