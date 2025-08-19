@@ -149,6 +149,15 @@ footer div{
     margin-top: 18px;
 }
 
+.papelera-img {
+    width: 20px;
+    filter: drop-shadow(1px 1px 0px #ffff);
+}
+
+.button-eliminar {
+    background-color: #d2f3c9;
+}
+
 #comprar-button {
     display: flex;
     flex-direction: column;

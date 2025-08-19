@@ -1,4 +1,4 @@
-// Definir variables importantes (let para modificar el carro).
+// Definir variables importantes.
 
 const sectionShirts = document.querySelector("section.section-remeras");
 const totalPrice = document.querySelector('#total');
@@ -6,7 +6,7 @@ const listShop = document.querySelector('#lista-compras');
 const shop = document.querySelector('.carrito');
 const buyButton = document.querySelector('#comprar-button');
 
-// LocalStorage para la lista del carrito.
+// variable para el LocalStorage de la lista del carrito.
 
 let carritoLocalStorage = JSON.parse(localStorage.getItem("listShop")) || [];
 
@@ -39,8 +39,6 @@ fetch("scripts/shirts.json")
             });
         });
 
-        // Mostrar carrito si ya había algo guardado
-
         actualizarCarrito();
     })
 
@@ -54,12 +52,10 @@ fetch("scripts/shirts.json")
         });
     });
 
-// Funciones:
-
 // Agregar producto al carrito acompañado de un sweetalert
 
 function agregarAlCarrito(producto) {
-    carritoLocalStorage.push(producto);  // Linea 62 consultada con Grok AI
+    carritoLocalStorage.push(producto);  // Linea 58 consultada con Grok AI
     guardarCarrito();
     actualizarCarrito();
 
@@ -80,9 +76,12 @@ function actualizarCarrito() {
     carritoLocalStorage.forEach((ropa, borrar) => {
         const li = document.createElement("li");
         li.innerHTML = `
-            ${ropa.name} - $${ropa.valor}
-            <button class="button-eliminar" data-index="${borrar}">X</button>
-        `;
+    ${ropa.name} - $${ropa.valor}
+    <button class="button-eliminar">
+        <img src="./media/papelera.png" class="papelera-img">
+    </button>
+`;
+;
 
         listShop.appendChild(li);
     });
